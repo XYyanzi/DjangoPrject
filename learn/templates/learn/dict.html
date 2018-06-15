@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板展示字典</title>
+</head>
+<body>
+<p>站点：{{ info_dict.site }} 内容：{{ info_dict.content }}</p>
+{% for key, value in info_dict.items %}
+    {{ key }} : {{ value }}
+{% endfor %}
+</body>
+</html>
